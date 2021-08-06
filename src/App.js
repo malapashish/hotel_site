@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from './pages/Home'
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
+import Contact from "./pages/Contact";
 import { Navbar } from "./components/Navbar";
 
 export default function App() {
@@ -16,6 +17,9 @@ export default function App() {
         </Route>
         <Route path="/about">
           <SingleRoom/>
+        </Route>
+        <Route path = "/contact" >
+          <Contact/>
         </Route>
         <Route path="*">
           <Error/>

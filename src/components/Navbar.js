@@ -17,6 +17,11 @@ export const Navbar = () => {
                             SingleRoom
                         </Link>
                     </li>
+                    <li>
+                        <Link to = '/contact' >
+                            Contact Us
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>
