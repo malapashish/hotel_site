@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap'); */
+
 body{
-    background-color: aqua;
+font-family: 'Andada Pro', serif;
+/* background-image: url("https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQxfHxob3RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"); */
+background-image: url("./images/image1.jpg");
+background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black
+  }
+
+  /**Navbar**/
+.navbar{
+    background: rgba(202, 202, 178, 0.1);
+    z-index: 1;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    border-bottom: 2px solid rgb(15, 116, 85); 
+}
+
+.nav-center{
+    display: flex;
+    justify-content:space-between;
+    align-items: left;
+    color: rgb(216, 106, 63);
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    /* font-family: 'Style Script', cursive; */
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav-links a{
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight:bold;
+    margin-right: 0.5rem;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    padding: 0.3rem 0.9rem;
+  }
+  .nav-links a:hover{
+    color: wheat;
+  }
+
+  /** Home **/
+
+  .homeImage{
+      display: block;
+    
+
 }
