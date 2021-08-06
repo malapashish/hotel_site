@@ -1,14 +1,27 @@
 import React from "react";
-import { Route, Switch } from "react-router";
-
-import Contact from "./Pages/Contact";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Home from './pages/Home'
+import SingleRoom from "./pages/SingleRoom";
+import Error from "./pages/Error";
+import { Navbar } from "./components/Navbar";
 
 export default function App() {
   return (
-    <div>
+    <>
+      <Router>
+      <Navbar/>
       <Switch>
-      <Route path = '/contact' component = {Contact} ></Route>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route path="/about">
+          <SingleRoom/>
+        </Route>
+        <Route path="*">
+          <Error/>
+        </Route>
       </Switch>
-    </div>
-  );
+    </Router>
+    </> 
+  )
 }
