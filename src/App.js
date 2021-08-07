@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from './Pages/Home'
-import Room from "./Pages/Room";
-import Error from "./Pages/Error";
-import Contact from "./Pages/Contact";
+import Home from './pages/Home'
+import Room from "./pages/Room";
+import Error from "./pages/Error";
+import Contact from "./pages/Contact";
 import { Navbar } from "./components/Navbar";
 
 export default function App() {
