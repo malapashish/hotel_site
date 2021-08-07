@@ -14,7 +14,12 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <Link to ="/about">
-                            SingleRoom
+                            Rooms
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to = '/contact' >
+                            Contact Us
                         </Link>
                     </li>
                 </ul>
