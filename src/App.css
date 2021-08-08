@@ -25,7 +25,7 @@ h4{
   background: rgba(190, 224, 235, 0.5);
   z-index: 1;
   display: flex;
-  height: 5rem;
+  height: 6rem;
   align-items: center;
 }
 
@@ -34,7 +34,7 @@ h4{
     justify-content:space-between;
     align-items: center;
     color: rgb(216, 106, 63);
-    width: 85vw;
+    width: 80vw;
     margin: 0 auto;
     max-width: 1170px;
     }
@@ -56,6 +56,14 @@ h4{
 .nav-links a:hover{
   color: rgb(137, 180, 124);
 }
+
+/**logo**/
+.logo {
+    width: 9rem;
+    height: 9rem;
+    margin-top: -22%;
+    /* overflow: hidden; */
+  }
 
  /** Home **/
 
@@ -96,10 +104,12 @@ footer{
   background-color:rgba(190, 224, 235, 0.5);
 }
 
-  .homeImage{
-      display: block;
+footer h5{
+    padding: 2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
-
 
 /**Room **/
 .room{

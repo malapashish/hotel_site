@@ -69,7 +69,7 @@ const Home = () => {
 
     </div>
     <footer>
-        <h4>Contact Us</h4>
+        <h5>Made with ❤️</h5>
 
     </footer>
 
