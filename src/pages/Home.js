@@ -1,57 +1,79 @@
-import React from 'react'
-import Singlebed from '../images/single.jpg'
-import Doublebed from '../images/double.jpg'
-import ACRoom from '../images/image6.jpg'
-import NonACRoom from '../images/image7.jpg'
+import React from "react"; 
+import { Carousel } from 'react-bootstrap';
+import image1 from '../Images/image1.jpg'
+import Singlebed from '../Images/image2.jpg'
+import Doublebed from '../Images/image3.jpg'
+import image7 from '../Images/7.jpg'
+import image2 from '../Images/4.jpg'
+import ACRoom from '../Images/image9.jpg'
+import NonACRoom from '../Images/image4.jpg'
+import image10 from '../Images/1.jpg'
 
 const Home = () => {
-    return (
-        <div className="homeImage">
-            <div className="bannerImage">
-                    {/* <div className="slider-frame">
-                    <div className="slide-images">
-                    <div className="img-container">
-                    <div className="img-container">
-                        <img src={Singlebed} alt="single"></img>
-                    </div>
-                    <div className="img-container">
-                        <img src={Doublebed} alt="double"></img>
-                    </div>
-                    <div className="img-container">
-                        <img src={ACRoom} alt="ac"></img>
-                    </div>
-                    </div>
-                    </div>
-                    </div> */}
-                    
-            </div>
-            <h2> AVAILABLE ROOMS</h2>
-            <div className="homepageImage">
-                <div>
-                    <img src={Singlebed} alt="single"></img>
-                    <h3>Single Bed Room</h3> 
-                </div>
-                <div>
-                    <img src={Doublebed} alt="double"></img>
-                    <h3>Double Bed Room</h3>
-                </div>
-                <div>
-                    <img src={ACRoom} alt="AC"></img>
-                    <h3>AC Bed Room</h3>
-                </div>
-                <div>
-                    <img src={NonACRoom} alt="NonAC"></img>
-                    <h3>Non-AC Bed Room</h3>
-                </div>
+  return (
+    <div className="homeImage">
+    <div className="bannerImage">
+    <Carousel controls= {false} fade={true} pause={false}>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100 h-100"
+          src={image1}
+          alt="First slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100 h-100"
+          src={image7}
+          alt="Second slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100 h-100"
+          src={image2}
+          alt="Third slide"
+        />
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100 h-100"
+          src={image10}
+          alt="Fourth slide"
+        />
+      </Carousel.Item>
+    </Carousel>
 
-            </div>
-            <footer>
-                <h3>Contact Us</h3>
 
-            </footer>
 
+            
+    </div>
+    <h4> AVAILABLE ROOMS</h4>
+    <div className="homepageImage">
+        <div>
+            <img src={Singlebed} alt="single"></img>
+            <h4>Single Bed Room</h4> 
         </div>
-    )
-}
+        <div>
+            <img src={Doublebed} alt="double"></img>
+            <h4>Double Bed Room</h4>
+        </div>
+        <div>
+            <img src={ACRoom} alt="AC"></img>
+            <h4>AC Room</h4>
+        </div>
+        <div>
+            <img src={NonACRoom} alt="NonAC"></img>
+            <h4>Non-AC Room</h4>
+        </div>
 
+    </div>
+    <footer>
+        <h4>Contact Us</h4>
+
+    </footer>
+
+</div>
+)
+}
 export default Home;
