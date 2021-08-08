@@ -3,11 +3,11 @@ import { Carousel } from 'react-bootstrap';
 import image1 from '../Images/image1.jpg'
 import Singlebed from '../Images/image2.jpg'
 import Doublebed from '../Images/image3.jpg'
-import image7 from '../Images/7.jpg'
+import image3 from '../Images/7.jpg'
 import image2 from '../Images/4.jpg'
 import ACRoom from '../Images/image9.jpg'
 import NonACRoom from '../Images/image4.jpg'
-import image10 from '../Images/1.jpg'
+import image4 from '../Images/1.jpg'
 
 const Home = () => {
   return (
@@ -24,7 +24,7 @@ const Home = () => {
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100 h-100"
-          src={image7}
+          src={image3}
           alt="Second slide"
         />
       </Carousel.Item>
@@ -38,7 +38,7 @@ const Home = () => {
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100 h-100"
-          src={image10}
+          src={image4}
           alt="Fourth slide"
         />
       </Carousel.Item>

@@ -16,7 +16,7 @@ export default function App() {
         <Route exact path="/">
           <Home/>
         </Route>
-        <Route path="/about">
+        <Route path="/rooms">
          <Room />
         </Route>
         <Route path = "/contact" >
