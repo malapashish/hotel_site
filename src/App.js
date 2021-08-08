@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from './pages/Home'
 import Room from "./pages/Room";
 import Error from "./pages/Error";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact"; 
+import SingleRoom from "./Pages/SingleRoom"; 
 import { Navbar } from "./components/Navbar";
 
 export default function App() {
